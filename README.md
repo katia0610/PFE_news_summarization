@@ -1,9 +1,3 @@
-Super, j’ai consulté ton projet sur [**GitHub – PFE\_new\_summarization**](https://github.com/katia0610/PFE_new_summarization).
-
-Voici une **suggestion complète de README.md professionnel** adaptée **exactement à ton repo actuel** pour que tu puisses la copier directement :
-
----
-
 # 📰 Multimodal News Summarizer
 
 ## 🚀 Description
