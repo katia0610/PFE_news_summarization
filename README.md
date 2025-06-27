@@ -2,67 +2,65 @@
 
 ## 🚀 Description
 
-**Multimodal News Summarizer** est une application complète qui :
+**Multimodal News Summarizer** is a complete application that:
 
-* 📄 Lit des **PDF ou images** contenant des articles de presse
-* 🎧 Transcrit des **audios** (radio, podcasts)
-* 🎥 Transcrit des **vidéos** (extraits de chaînes TV)
-* 📝 **Corrige et nettoie** automatiquement le texte extrait
-* ✂️ Génère un **résumé fidèle et synthétique** en français ou en arabe
+* 📄 Reads **PDFs or images** containing news articles
+* 🎧 Transcribes **audio files** (radio, podcasts)
+* 🎥 Transcribes **videos** (TV extracts, news reports)
+* 📝 **Cleans and corrects** the extracted text automatically
+* ✂️ Generates a **faithful and concise summary** in French or Arabic
 
 ---
 
-## 🛠️ Stack technique
+## 🛠️ Tech Stack
 
 ### 🔧 Backend
 
 * **Python 3.10+**
 * **FastAPI**
-* **Tesseract OCR** pour l’extraction de texte sur images et PDF
-* **pdf2image** pour la conversion PDF → image
-* **OpenCV** pour le prétraitement d’images
-* **Langdetect** pour la détection de langue
-* **Groq API** :
+* **Tesseract OCR** for text extraction from images and PDFs
+* **pdf2image** for PDF → image conversion
+* **OpenCV** for image preprocessing
+* **Langdetect** for language detection
+* **Groq API**:
 
-  * **Whisper** pour la transcription audio/vidéo
-  * **LLM** pour la correction et le résumé
+  * **Whisper** for audio/video transcription
+  * **LLM** for correction and summarization
 
 ### 🎨 Frontend
 
 * **React JS**
-  Interface utilisateur complète avec :
+  A complete user interface with:
 
-  * **Système d’authentification** (inscription, connexion)
-  * Téléversement de fichiers (PDF, image, audio, vidéo)
-  * Affichage des résumés générés automatiquement
-
+  * **Authentication system** (sign up, login)
+  * File upload (PDF, image, audio, video)
+  * Display of the automatically generated summaries
 
 ---
-
 
 ## ⚙️ Installation
 
 ### 🔧 Backend
 
-1. **Cloner le projet**
+1. **Clone the project**
 
 ```bash
 git clone https://github.com/katia0610/PFE_new_summarization.git
 cd PFE_new_summarization/backend
 ```
 
-2. **Installer les dépendances**
+2. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Installer Tesseract OCR**
+3. **Install Tesseract OCR**
 
-* **Windows :**
+* **Windows:**
 
-  * Télécharger depuis [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
-  * Mettre son chemin dans `constants.py` :
+  * Download from [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
+  * Set its path in `constants.py`:
 
 ```python
 PATH_tesseract = "C:/Program Files/Tesseract-OCR/tesseract.exe"
@@ -70,13 +68,13 @@ PATH_poppler = "C:/poppler-xx/bin"
 GROQ_API_KEYS = "sk-xxxxxx"
 ```
 
-* **Linux :**
+* **Linux:**
 
 ```bash
 sudo apt install tesseract-ocr
 ```
 
-4. **Lancer FastAPI**
+4. **Run FastAPI**
 
 ```bash
 uvicorn main:app --reload --port 8000
@@ -86,19 +84,19 @@ uvicorn main:app --reload --port 8000
 
 ### 🎨 Frontend
 
-1. **Accéder au dossier frontend**
+1. **Navigate to the frontend folder**
 
 ```bash
 cd ../frontend
 ```
 
-2. **Installer les dépendances**
+2. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-3. **Lancer React JS**
+3. **Run React JS**
 
 ```bash
 npm start
@@ -106,30 +104,28 @@ npm start
 
 ---
 
-## ▶️ Utilisation
+## ▶️ Usage
 
-* Ouvrir **[http://localhost:3000](http://localhost:3000)**
-* Téléverser un **PDF, une image, une vidéo ou un audio**
-* Recevoir automatiquement un **résumé clair et fidèle** de son contenu
+* Open **[http://localhost:3000](http://localhost:3000)**
+* Upload a **PDF, image, video, or audio file**
+* Automatically receive a **clear and faithful summary** of its content
 
 ---
 
-## 🎯 Fonctionnalités clés
+## 🎯 Key Features
 
-✅ Support **multimodal : PDF, image, audio, vidéo**
-✅ **Détection automatique de langue** (français / arabe)
-✅ **Correction orthographique et nettoyage OCR/ASR**
-✅ **Résumé synthétique** avec LLM
-✅ API REST backend + interface React
+✅ **Multimodal support:** PDF, image, audio, video
+✅ **Automatic language detection** (French / Arabic)
+✅ **OCR/ASR text cleaning and correction**
+✅ **Concise summarization** with LLM
+✅ REST API backend + React interface
 
+---
 
-
-## 🧑‍💻 Auteur
+## 🧑‍💻 Authors
 
 * **Katia Bair**
   [GitHub](https://github.com/katia0610)
-  
-* **ET mon binome du memoire**
-  
 
----
+* **And my thesis teammate**
+
