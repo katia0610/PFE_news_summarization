@@ -45,8 +45,8 @@
 1. **Clone the project**
 
 ```bash
-git clone https://github.com/katia0610/PFE_new_summarization.git
-cd PFE_new_summarization/backend
+git clone https://github.com/katia0610/PFE_news_summarization.git
+cd PFE_news_summarization/backend
 ```
 
 2. **Install dependencies**
